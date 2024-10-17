@@ -1,9 +1,7 @@
 <script>
-	import { env } from '$env/dynamic/public';
-
 	// Extract API key and URL from environment variables
-	const apiKey = env.PUBLIC_API_KEY;
-	const apiUrl = env.PUBLIC_API_URL;
+	const apiKey = import.meta.env.PUBLIC_API_KEY;
+	const apiUrl = import.meta.env.PUBLIC_API_URL;
 
 	// Variables to handle response data
 	let responseMessage = '';
